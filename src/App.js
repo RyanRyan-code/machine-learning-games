@@ -1,8 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
+      <Routes>
+        <Route path='/ml' element={
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,7 +24,9 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>} />
+    </Routes>
+    </Router>
   );
 }
 
